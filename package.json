@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "npx mocha --experimental-vm-modules test/**/*.mjs",
+    "test:unit": "npx mocha --experimental-vm-modules test/unit/**/*.mjs",
+    "test:integration": "npx mocha --experimental-vm-modules test/integration/**/*.mjs",
+    "start": "node index.js"
   },
   "author": "Shrikant Kshatriya",
   "license": "ISC",
